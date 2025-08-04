@@ -1,7 +1,13 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+    static String title = "";
+    static String author = "";
+    static int pages = "";
+    boolean isAvailable = "true";
+
+    public Book(String bookTitle, String bookAuthor, int bookPages) {
+        title = bookTitle;
+        author = bookAuthor;
+        pages = bookPages;
         System.out.println("Main Branch!");
     }
 }
