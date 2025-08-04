@@ -6,30 +6,33 @@ public class Main {
 
         System.out.println();
         book1.displayInfo();
+        System.out.println();
         book1.borrowBook();
-        System.out.println();
         book1.displayInfo();
+        System.out.println();
         book1.returnBook();
-        System.out.println();
         book1.displayInfo();
+        System.out.println();
 
         System.out.println();
         book2.displayInfo();
+        System.out.println();
         book2.borrowBook();
-        System.out.println();
         book2.displayInfo();
+        System.out.println();
         book2.returnBook();
-        System.out.println();
         book2.displayInfo();
+        System.out.println();
 
         System.out.println();
         book3.displayInfo();
+        System.out.println();
         book3.borrowBook();
-        System.out.println();
         book3.displayInfo();
+        System.out.println();
         book3.returnBook();
-        System.out.println();
         book3.displayInfo();
+        System.out.println();
     }
 }
 
