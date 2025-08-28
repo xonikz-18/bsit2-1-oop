@@ -14,17 +14,16 @@ public class Main {
         List<String> uniqueHashtags = postManager.manageHashtags(hashtags);
         System.out.println("Unique Hashtags: " + uniqueHashtags);
 
-        Map<String, Integer> samplePosts = new HashMap<>();
-        samplePosts.put("Advanced Java Tutorial", 500);
-        samplePosts.put("Spring Boot Guide", 150);
+        HashMap<String, Integer> samplePosts = new HashMap<>();
+        samplePosts.put("Advanced Java Tutorial", 800);
+        samplePosts.put("Spring Boot Guide", 1200);
 
-        List<String> trendingPosts = postManager.findTrendingPosts(samplePosts);
-        List<String> sortedTrendingPosts = new ArrayList<>(trendingPosts);
-        Collections.sort(sortedTrendingPosts);
-        System.out.println("Trending Posts: " + sortedTrendingPosts);
+        ArrayList<String> postTitles = new ArrayList<>(samplePosts.keySet());
+        LinkedList<String> trendingPosts = postManager.findTrendingPosts(postTitles, samplePosts);
+        Collections.sort(trendingPosts);
+        System.out.println("Trending Posts: " + trendingPosts);
 
         List<String> uniqueAuthors = postManager.getUniqueAuthors("Alice", "Bob", "Charlie", "Alice", "Bob");
-
         System.out.println("Unique Authors: " + uniqueAuthors);
     }
 }
